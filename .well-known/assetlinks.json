@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "cc.methyl.zkool",
+    "sha256_cert_fingerprints": ["A38FE054C05244D2478B154F4C55EE3538012194DBA84D5864E4CA2FFE1DFE"]
+  }
+}]
