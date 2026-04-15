@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hhanh00 — Zcash Developer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --border: #1e1e2e;
+      --text: #e0e0e8;
+      --muted: #8888a0;
+      --accent: #f4b740;
+      --accent-dim: #f4b74020;
+      --green: #4ade80;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 48px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.5px; }
+    .hero h1 span { color: var(--accent); }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.15rem;
+      margin-top: 12px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Zkool CTA */
+    .zkool-cta {
+      margin: 32px auto 64px;
+      padding: 32px 40px;
+      background: linear-gradient(135deg, var(--accent-dim), var(--surface));
+      border: 1px solid var(--accent);
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    .zkool-cta h2 { font-size: 1.5rem; margin-bottom: 8px; }
+    .zkool-cta p { color: var(--muted); margin-bottom: 20px; }
+    .zkool-cta a.btn {
+      display: inline-block;
+      padding: 12px 32px;
+      background: var(--accent);
+      color: #000;
+      font-weight: 600;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: opacity 0.2s;
+    }
+    .zkool-cta a.btn:hover { opacity: 0.85; text-decoration: none; }
+
+    /* Section */
+    .section { margin-bottom: 64px; }
+    .section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 24px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Focus areas */
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .focus-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+    }
+    .focus-card h3 { font-size: 1rem; margin-bottom: 6px; }
+    .focus-card p { color: var(--muted); font-size: 0.9rem; }
+
+    /* Repo grid */
+    .repo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .repo-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      transition: border-color 0.2s;
+    }
+    .repo-card:hover { border-color: var(--accent); }
+    .repo-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .repo-name .lang {
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--accent-dim);
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .repo-desc { color: var(--muted); font-size: 0.85rem; }
+    .repo-stars { color: var(--muted); font-size: 0.8rem; margin-top: 6px; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <section class="hero">
+      <h1><span>hhanh00</span></h1>
+      <p>Building privacy-preserving tools for Zcash. Wallets, sync engines, FROST multisig, and shielded transaction infrastructure.</p>
+    </section>
+
+    <section class="zkool-cta">
+      <h2>Zkool</h2>
+      <p>A next-generation shielded wallet for Zcash &mdash; the successor to ywallet. Built with Rust and Flutter for speed and privacy.</p>
+      <a class="btn" href="https://github.com/hhanh00/zkool">View on GitHub &rarr;</a>
+    </section>
+
+    <section class="section">
+      <h2>Zcash Work</h2>
+      <div class="focus-grid">
+        <div class="focus-card">
+          <h3>Shielded Wallets</h3>
+          <p>Creator of ywallet (zwallet) and Zkool &mdash; light shielded wallets with compact block sync and privacy-first design.</p>
+        </div>
+        <div class="focus-card">
+          <h3>Warp Sync Engine</h3>
+          <p>Designed the warp protocol for fast Zcash block synchronization, enabling near-instant wallet restore from seed.</p>
+        </div>
+        <div class="focus-card">
+          <h3>FROST &amp; Multisig</h3>
+          <p>Implementing threshold signatures (FROST) and multi-signature workflows for Zcash, enabling collaborative transaction signing.</p>
+        </div>
+        <div class="focus-card">
+          <h3>Zcash Voting</h3>
+          <p>Built a complete coin-voting system on Zcash &mdash; on-chain vote creation, auditing, and tally with shielded transactions.</p>
+        </div>
+        <div class="focus-card">
+          <h3>Ledger Integration</h3>
+          <p>Zcash Ledger app for hardware wallet support, enabling cold storage of shielded funds on Nano S/X devices.</p>
+        </div>
+        <div class="focus-card">
+          <h3>BTCPay Plugin</h3>
+          <p>Zcash payment integration for BTCPay Server, enabling merchants to accept shielded ZEC payments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Featured Repositories</h2>
+      <div class="repo-grid">
+
+        <a class="repo-card" href="https://github.com/hhanh00/zwallet">
+          <div class="repo-name">zwallet <span class="lang">Dart</span></div>
+          <div class="repo-desc">Zcash and Ycash light shielded wallet (ywallet)</div>
+          <div class="repo-stars">&#9733; 59</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/zkool2">
+          <div class="repo-name">zkool2 <span class="lang">Rust</span></div>
+          <div class="repo-desc">Zkool &mdash; Wallet for Zcash (successor to ywallet)</div>
+          <div class="repo-stars">&#9733; 15</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/zcash-sync">
+          <div class="repo-name">zcash-sync <span class="lang">Rust</span></div>
+          <div class="repo-desc">Compact block synchronization for Zcash wallets</div>
+          <div class="repo-stars">&#9733; 13</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/zcash-ledger">
+          <div class="repo-name">zcash-ledger <span class="lang">C</span></div>
+          <div class="repo-desc">Zcash app for Ledger hardware wallets</div>
+          <div class="repo-stars">&#9733; 7</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/zcash-walletd">
+          <div class="repo-name">zcash-walletd <span class="lang">Rust</span></div>
+          <div class="repo-desc">Zcash wallet daemon</div>
+          <div class="repo-stars">&#9733; 5</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/warp">
+          <div class="repo-name">warp <span class="lang">Rust</span></div>
+          <div class="repo-desc">Warp sync protocol for Zcash</div>
+          <div class="repo-stars">&#9733; 4</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/zcash-cold-wallet">
+          <div class="repo-name">zcash-cold-wallet <span class="lang">Rust</span></div>
+          <div class="repo-desc">Cold storage solution for Zcash</div>
+          <div class="repo-stars">&#9733; 4</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/secp256k1-cl">
+          <div class="repo-name">secp256k1-cl <span class="lang">C</span></div>
+          <div class="repo-desc">secp256k1 elliptic curve in OpenCL for GPU acceleration</div>
+          <div class="repo-stars">&#9733; 53</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/zcash-vote">
+          <div class="repo-name">zcash-vote <span class="lang">Rust</span></div>
+          <div class="repo-desc">On-chain coin voting for Zcash using shielded transactions</div>
+          <div class="repo-stars">&#9733; 1</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/zcash-btcpay">
+          <div class="repo-name">zcash-btcpay</div>
+          <div class="repo-desc">Zcash payment plugin for BTCPay Server</div>
+          <div class="repo-stars">&#9733; 1</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/orchard-vote">
+          <div class="repo-name">orchard-vote <span class="lang">Rust</span></div>
+          <div class="repo-desc">Voting with Orchard shielded pool</div>
+        </a>
+
+        <a class="repo-card" href="https://github.com/hhanh00/halo_bench">
+          <div class="repo-name">halo_bench <span class="lang">C++</span></div>
+          <div class="repo-desc">Benchmarking Halo 2 proof system performance</div>
+        </a>
+
+      </div>
+    </section>
+
+    <footer>
+      <a href="https://github.com/hhanh00">github.com/hhanh00</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
