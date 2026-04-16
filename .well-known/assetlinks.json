@@ -3,13 +3,6 @@
   "target": {
     "namespace": "android_app",
     "package_name": "cc.methyl.zkool",
-    "sha256_cert_fingerprints": ["A3:8F:E0:54:C0:52:44:D2:47:8B:15:4F:4C:55:EE:35:38:01:21:94:DB:A8:4D:58:64:E4:CA:2F:FE:1D:5E:FE"]
-  }
-}, {
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "cc.methyl.zkool",
-    "sha256_cert_fingerprints": ["A5:87:90:32:A0:AA:13:2D:84:3F:B9:96:B8:70:C7:5E:B4:D6:C8:AB:E0:82:7C:A9:3C:64:46:03:99:21:18:AB"]
+    "sha256_cert_fingerprints": ["A3:8F:E0:54:C0:52:44:D2:47:8B:15:4F:4C:55:EE:35:38:01:21:94:DB:A8:4D:58:64:E4:CA:2F:FE:1D:5E:FE", "A5:87:90:32:A0:AA:13:2D:84:3F:B9:96:B8:70:C7:5E:B4:D6:C8:AB:E0:82:7C:A9:3C:64:46:03:99:21:18:AB", "9A:4C:58:B6:A6:72:EC:94:9D:B3:77:EB:A7:F1:E3:D2:3E:4D:EB:12:F0:56:62:AA:C5:38:28:42:13:88:5A:A4"]
   }
 }]
